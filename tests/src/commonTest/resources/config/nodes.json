@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "type": "LocalSecret",
+      "chainId": "secretdev-1",
+      "grpcGatewayEndpoint": "http://localhost:1317",
+      "faucetAddressEndpoint": "http://localhost:5000/faucet?address="
+    },
+    {
+      "type": "Pulsar3",
+      "chainId": "pulsar-3",
+      "grpcGatewayEndpoint": "https://pulsar.api.trivium.network:1317",
+      "faucetAddressEndpoint": "https://faucet.pulsar.scrttestnet.com/"
+    },
+    {
+      "type": "Custom",
+      "chainId": "secretdev-1",
+      "grpcGatewayEndpoint": "http://eqoty.duckdns.org:1317",
+      "faucetAddressEndpoint": "http://eqoty.duckdns.org:5000/faucet?address="
+    }
+  ]
+}
