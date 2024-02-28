@@ -24,11 +24,11 @@ pub fn execute(
 ) -> StdResult<Response> {
     deps.api.debug("execute started");
     // print the block random to debug logs
-    deps.api.debug(&*format!(
+    deps.api.debug(&format!(
         "block random length: {:?}",
         env.block.random.clone().unwrap().0.len()
     ));
-    deps.api.debug(&*format!(
+    deps.api.debug(&format!(
         "block random: {:?}",
         env.block.random.clone().unwrap()
     ));
@@ -62,11 +62,11 @@ pub fn execute(
 #[entry_point]
 pub fn query(deps: Deps, env: Env, msg: QueryMsg) -> StdResult<Binary> {
     deps.api.debug("query started");
-    deps.api.debug(&*format!(
+    deps.api.debug(&format!(
         "block random length: {:?}",
         env.block.random.clone().unwrap().0.len()
     ));
-    deps.api.debug(&*format!(
+    deps.api.debug(&format!(
         "block random: {:?}",
         env.block.random.clone().unwrap()
     ));
