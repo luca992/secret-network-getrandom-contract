@@ -79,7 +79,7 @@ pub fn query(deps: Deps, env: Env, msg: QueryMsg) -> StdResult<Binary> {
             let rng_seed: [u8; 32] = entropy
                 .0
                 .try_into()
-                .map_err(|_| StdError::generic_err("Invalid block random"))?;
+                .map_err(|_| StdError::generic_err("Entropy must be 32 bytes"))?;
             init_getrandom(rng_seed);
             let mut rand1 = [0u8; 32];
             let mut rand2 = [0u8; 32];
