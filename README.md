@@ -2,6 +2,7 @@
 
 An example of how to use the [getrandom](https://github.com/rust-random/getrandom) library in a contract on Secret
 Network using a custom `getrandom` implementation from [getrandom-runtime-seeded](https://github.com/luca992/getrandom-runtime-seeded)
+seeded with Secret Network's on-chain randomness [Secret-VRF](https://docs.scrt.network/secret-network-documentation/development/secret-contract-fundamentals/secret-vrf-on-chain-randomness) when available.
 
 
 ### Why
